@@ -27,7 +27,7 @@
             <nav class="flex justify-between font-medium">
                 <a href="index.html">Aisosa Magaret Oyakhire</a>
                 <a class="hidden md:inline" href="index.html">Home</a>
-                <a class="hidden md:inline" href="work.html">Work</a>
+                <a class="hidden md:inline" href="projects.html">Projects</a>
                 <a class="hidden md:inline" href="about.html">About</a>
                 <a class="hidden md:inline" href="contact.html">Contact</a>
                 <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15"
@@ -48,23 +48,24 @@
         </div>
         <div class="container grid grid-cols-12 gap-8">
             <div class="col-span-12 md:col-span-7">
-                <form action="#">
-                    <input type="text"
+                <form action="https://formspree.io/f/xgvezooa" method="POST">
+                    <input type="text" name="name"
                         class="w-full placeholder:text-text text-lg py-4 border-b-2 border-solid border-slate-500 font-medium outline-none focus:border-text mb-8"
-                        placeholder="Name">
-                    <input type="email"
+                        placeholder="Name" required>
+                    <input type="email" name="email"
                         class="w-full placeholder:text-text text-lg py-4 border-b-2 border-solid border-slate-500 font-medium outline-none focus:border-text mb-8"
-                        placeholder="Email">
-                    <input type="text"
+                        placeholder="Email" required>
+                    <input type="text" name="subject"
                         class="w-full placeholder:text-text text-lg py-4 border-b-2 border-solid border-slate-500 font-medium outline-none focus:border-text mb-8"
-                        placeholder="Subject">
-                    <textarea
+                        placeholder="Subject" required>
+                    <textarea name="message"
                         class="w-full placeholder:text-text text-lg py-4 border-b-2 border-solid border-slate-500 font-medium outline-none focus:border-text mb-8"
-                        placeholder="Message" rows="4"></textarea>
+                        placeholder="Message" rows="4" required></textarea>
                     <button type="submit"
                         class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Send</button>
                 </form>
             </div>
+
             <div class="col-span-12 md:col-span-4 md:col-start-9">
                 <div class="mb-24">
                     <p class="text-sm mb-4">Contact details</p>
@@ -122,7 +123,7 @@
                 <rect y="17.4246" width="24" height="3" transform="rotate(-45 0 17.4246)" fill="#fff" />
             </svg></button>
         <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </div>
