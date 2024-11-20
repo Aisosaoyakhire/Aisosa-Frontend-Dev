@@ -48,7 +48,8 @@
         </div>
         <div class="container grid grid-cols-12 gap-8">
             <div class="col-span-12 md:col-span-7">
-                <form action="https://formspree.io/f/xgvezooa" method="POST">
+                <form id="contactForm" action="https://formspree.io/f/xgvezooa" method="POST"
+                    onsubmit="clearForm(event)">
                     <input type="text" name="name"
                         class="w-full placeholder:text-text text-lg py-4 border-b-2 border-solid border-slate-500 font-medium outline-none focus:border-text mb-8"
                         placeholder="Name" required>
@@ -64,6 +65,9 @@
                     <button type="submit"
                         class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Send</button>
                 </form>
+
+
+
             </div>
 
             <div class="col-span-12 md:col-span-4 md:col-start-9">
@@ -132,6 +136,15 @@
     <!--==== Main JS ====================-->
     <!--=================================-->
     <script src="./js/scripts.js"></script>
+
+    <script>
+        function clearForm(event) {
+            // Prevent the default form submission behavior
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+            }, 500);
+        }
+    </script>
 </body>
 
 </html>
